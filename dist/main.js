@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=new function(e,t,i,s,f){this.title="funds",this.author="patrick",this.page=200,this.isDoneReading=!1,this.coverColor="#fefefe"}("funds","patrick",200,!1,"#fefefe");console.log(e)})();

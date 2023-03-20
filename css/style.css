@@ -35,7 +35,7 @@
   background-color: green;
 }
 
-.book-column > #add-book {
+#add-book {
   width: 80%;
   height: 80%;
   background-color: green;

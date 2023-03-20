@@ -1,0 +1,43 @@
+#content {
+  margin: auto;
+  width: min(600px, 90vw);
+  min-width: 300px;
+  height: auto;
+  background-color: blue;
+}
+
+#cabinet {
+  display: grid;
+  grid-template-rows: 225px 225px;
+  grid-auto-rows: 225px;
+  border: 20px solid transparent;
+  border-image: url(../assets/texture-wooden1.jpg) 30 repeat;
+}
+
+.shelves {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  border-image: url(../assets/texture-wooden1.jpg) 30 repeat;
+}
+
+.book-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.book-column .bookItem {
+  width: 80%;
+  height: 80%;
+  background-color: green;
+}
+
+.book-column > #add-book {
+  width: 80%;
+  height: 80%;
+  background-color: green;
+}
+

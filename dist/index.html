@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Book Library</title>
 
-    <!-- normalize -->
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library</title>
 
-    <!-- style -->
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css" type="text/css" />
 
-    <!-- favicons -->
-    <link
-      rel="shortcut icon"
-      href="../assets/favicons.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <div id="add-book-form">
-      <div class="header">Add Book</div>
+  <!-- style -->
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <!-- favicons -->
+  <link rel="shortcut icon" href="../assets/favicons.png" type="image/x-icon" />
+</head>
+
+<body>
+  <div id="add-book-form">
+    <div class="header">Add Book</div>
+    <div class="content">
       <div id="form">
-        <div class="title">
+        <div class="form-field">
           <label for="title">Book Title</label>
           <input type="text" required name="title" id="title" placeholder="Enter Title">
         </div>
-        <div class="author">
+        <div class="form-field">
           <label for="author">Book Author</label>
           <input type="text" required name="author" id="auhtor" placeholder="Enter Author">
         </div>
-        <div class="pages">
+        <div class="form-field">
           <label for="page-no">Page Number</label>
-          <input type="number" name="page-no" id="page-no"
-          min="0" max="100000">
+          <input type="number" name="page-no" id="page-no" min="0" max="100000">
         </div>
-        <div class="cover-color">
+        <div class="form-field">
           <label for="cover-color">Cover Color</label>
           <input type="color" name="cover-color" id="cover-color">
         </div>
-        <div class="read">
+        <div class="form-is">
           <label for="read">Done Reading?</label>
           <input type="checkbox" name="read" id="read">
         </div>
@@ -53,24 +48,26 @@
         </div>
       </div>
       <div id="book-template">
-        
-      </div>
-    </div>
-    <div id="content">
-      <div id="cabinet">
-        <div class="shelves" level="1">
-          <div class="book-column">
-            <div id="add-book"></div>
-          </div>
-        
-        </div>
-        <div class="shelves" level="2">
-          
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script src="main.js"></script>
-  </body>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="cabinet">
+      <div class="shelves" level="1">
+        <div class="book-column">
+          <div id="add-book"></div>
+        </div>
+
+      </div>
+      <div class="shelves" level="2">
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
 </html>

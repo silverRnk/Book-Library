@@ -32,7 +32,7 @@ function updateCabinet() {
   bookCabinet.innerHTML =
     '<div class="shelves" level="1">' +
     '<div class="book-column">' +
-    '<div class="bookItem"></div>' +
+    '<div id="add-book"></div>' +
     '</div></div><div class="shelves" level="2">' +
     "</div></div>";
 
@@ -103,7 +103,7 @@ function onClickAddBook() {
     addBookToList(new Book("fsfs", "fsfs", 100));
     updateCabinet();
     onClickAddBook();
-    console.log(bookList.length);
+
   });
 }
 

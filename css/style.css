@@ -41,3 +41,15 @@
   background-color: green;
 }
 
+
+/*
+===================================
+   Add Book Form
+===================================
+*/
+
+#form{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}

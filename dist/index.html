@@ -23,6 +23,38 @@
     />
   </head>
   <body>
+    <div id="add-book-form">
+      <div id="form">
+        <div class="title">
+          <label for="title">Book Title</label>
+          <input type="text" name="title" id="title" placeholder="Enter Title">
+        </div>
+        <div class="author">
+          <label for="author">Book Author</label>
+          <input type="text" name="author" id="auhtor" placeholder="Enter Author">
+        </div>
+        <div class="pages">
+          <label for="page-no">Page Number</label>
+          <input type="number" name="page-no" id="page-no"
+          min="0" max="100000">
+        </div>
+        <div class="cover-color">
+          <label for="cover-color">Cover Color</label>
+          <input type="color" name="cover-color" id="cover-color">
+        </div>
+        <div class="read">
+          <label for="read">Done Reading?</label>
+          <input type="checkbox" name="read" id="read">
+        </div>
+        <div class="button">
+          <button>Submit</button>
+          <button>Cancel</button>
+        </div>
+      </div>
+      <div id="book-template">
+        
+      </div>
+    </div>
     <div id="content">
       <div id="cabinet">
         <div class="shelves" level="1">

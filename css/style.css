@@ -48,8 +48,8 @@
 ===================================
 */
 
-#add-book-form{
-  position: absolute;
+.add-book-form{
+  position: absolute ;
   top: calc(50% - 300px);
   right: calc(50% - 400px);
   padding: 10px;
@@ -59,11 +59,12 @@
   border: 2px solid black;
   display:flex;
   flex-direction: column;
+  z-index: 2;
   
 
 }
 
-#add-book-form .content{
+.add-book-form .form-content{
   flex:auto;
   display: grid;
   grid-template-columns: 1fr 1fr;

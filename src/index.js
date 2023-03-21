@@ -1,11 +1,27 @@
 import Book from "./Book.js";
 
+const addBookFormInputs = {
+  bookTitle: document.querySelector('#title'),
+  bookAuthor: document.querySelector('#author'),
+  pageNo: document.querySelector('#page-no'),
+  coverColor: document.querySelector('#cover-color'),
+  isRead: document.querySelector('#read'),
+  btnSubmit: document.querySelector('#submit'),
+  btnCancel: document.querySelector('#cancel')
+}
+
+addBookFormInputs.bookAuthor.addEventListener(
+  'click', () => {
+    
+  }
+)
+
 let bookList = [];
 
 function addBookToList(book) {
-  if(bookList.length != 0){
+  if (bookList.length != 0) {
     bookList = [book].concat(bookList)
-  }else{
+  } else {
     bookList = [book]
   }
 }

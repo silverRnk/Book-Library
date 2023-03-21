@@ -99,10 +99,9 @@ function updateCabinet() {
 
 function onClickAddBook() {
   let addBookBtn = document.querySelector("#add-book");
+  let addBookForm = document.querySelector('.add-book-form')
   addBookBtn.addEventListener("click", () => {
-    addBookToList(new Book("fsfs", "fsfs", 100));
-    updateCabinet();
-    onClickAddBook();
+    addBookBtn.classList.toggle('hidden')
 
   });
 }
